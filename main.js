@@ -2,7 +2,7 @@ const electron = require('electron');
 const url = require('url');
 const path = require('path');
 
-const {app, BrowserWindow, Menu} = electron;
+const {app, BrowserWindow} = electron;
 
 let mainWindow;
 
@@ -13,8 +13,8 @@ app.on('ready', function(){
         }
     });
     mainWindow.loadURL(url.format({
-        pathname:path.join(__dirname, 'mainWindow.html'),
+        pathname:path.join(__dirname, 'trial1.html'),
         protocol: 'file',
         slashes: true
-    }))
+    }));
 })
