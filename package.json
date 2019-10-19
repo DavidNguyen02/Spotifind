@@ -1,0 +1,22 @@
+{
+  "name": "spotifind",
+  "version": "1.0.0",
+  "description": "Spotifind",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidNguyen02/Spotifind.git"
+  },
+  "author": "David",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidNguyen02/Spotifind/issues"
+  },
+  "homepage": "https://github.com/DavidNguyen02/Spotifind#readme",
+  "dependencies": {
+    "electron": "^6.0.12"
+  }
+}
