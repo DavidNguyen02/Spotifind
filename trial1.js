@@ -7,7 +7,7 @@ function addRow(){
     var row = table.insertRow();
     var cell = row.insertCell();
     var cell2 = row.insertCell();
-    cell.innerHTML = ""
+    cell.innerHTML = "";
     cell2.innerHTML = document.getElementById("message").value;
     document.getElementById("message").value = "";
     cell2.classList.add("mine");
