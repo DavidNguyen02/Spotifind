@@ -24,7 +24,6 @@
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
   padding: 10px;
   background-color: white;
 }
@@ -90,4 +89,13 @@
 }
 .center {
   display: inline-block;
+}
+
+.mine {
+  background-color: cadetblue;
+}
+
+#table {
+  width: 100%;
+  table-layout: fixed;
 }
