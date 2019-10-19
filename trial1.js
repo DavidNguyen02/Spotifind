@@ -2,6 +2,9 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+function addRow(){
+    var table = document.getElementById("table");
+    var row = table.insertRow();
+    var cell = row.insertCell();
+    cell.innerHTML = document.getElementById("message").value;
 }

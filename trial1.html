@@ -7,26 +7,32 @@
 	</head>
 
 	<body>
-		<div class="split left">
-			<div class="center">
-				<ul>
-					<li>Hello</li>
-					<li>Test</li>
-				</ul>
+		<div class="txt">
+			<div class="split left">
+				<div class="center">
+					<ul>
+						<li>Hello</li>
+						<li>Test</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="split right">
-			<div class="center">
-				<div class="chat-popup" id="myForm">
-				<form action="/action_page.php" class="form-container">
-					<h1>Chat</h1>
+			<div class="split right">
+				<div class="center">
+					<div class="chat-popup" id="myForm">
+					<form action="/action_page.php" class="form-container">
+						<h1>Chat</h1>
 
-					<label for="msg"><b>Message</b></label>
-					<textarea placeholder="Type message.." name="msg" required></textarea>
+						<label for="msg"><b>Message</b></label>
+						<table id="table">
+							<tr>
+								<td><p>Say hi!</p></td>
+							</tr>
+						</table>
+						<textarea placeholder="Type message.." name="msg" id="message" required></textarea>
 
-					<button type="submit" class="btn">Send</button>
-					<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-				</form>
+						<button type="button" class="btn" onclick="addRow()">Send</button>
+					</form>
+				</div>
 			</div>
 		</div>
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
