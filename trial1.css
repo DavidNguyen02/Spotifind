@@ -119,3 +119,7 @@
   position: absolute;
   bottom: 0;
 }
+
+td {
+  border-radius: 10px;
+}
