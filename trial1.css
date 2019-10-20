@@ -167,5 +167,29 @@ a:active {
 
 h1 {
   color: #4CAF50;
+<<<<<<< HEAD
   font-family: "Proxima Nova", sans-serif;
+=======
+}
+
+
+
+
+/*edit the scroll on the page
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgb(100,100,100) ;
+  border-radius: 10px;
+>>>>>>> 1b9cc24d8879cd6080cfeb47e1d49cbabbed1ba3
 }
