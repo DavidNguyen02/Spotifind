@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(141, 135, 135);
+}
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
@@ -24,8 +27,7 @@
 
 /* Add styles to the form container */
 .form-container {
-  padding: 10px;
-  background-color: white;
+  background-color: rgb(141, 135, 135);
 }
 
 /* Full-width textarea */
@@ -41,7 +43,7 @@
 
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
-  background-color: #ddd;
+  background-color: #f1f1f1;
   outline: none;
 }
 
@@ -74,28 +76,27 @@
   z-index: 1;
   top: 0;
   overflow-x: hidden;
-  padding-top: 20px;
   text-align: center;
 }
 .left {
   left: 0;
   width: 20%;
-  background-color: rgb(57, 139, 98);
+  background-color:rgb(58, 58, 58);
 }
 .right {
   right: 0;
   width: 80%;
-  background-color: rgb(145, 145, 145)
 }
 .center {
   display: inline-block;
 }
 
 .mine {
-  background-color: rgb(57, 139, 98);
+  background-color: #4CAF50;
 }
 
 #table {
+  padding: 10px;
   width: 100%;
   table-layout: fixed;
   empty-cells: hide;
@@ -106,6 +107,7 @@
   display: inline-block;
   float: left;
   width: 92%;
+
 }
 
 .but {
@@ -123,8 +125,16 @@
   bottom: 0;
 }
 
-td {
+#rooms {
+  background-color:rgb(58, 58, 58);
+  color: white;
+}
+#table td {
   border-radius: 10px;
+}
+
+#rooms tr td:hover{
+  background-color: #4CAF50;
 }
 
 a {
@@ -133,13 +143,28 @@ a {
 }
 
 a:hover {
-  color: red;
+  background-color:rgb(255, 255, 255);
+  color: white;
+  text-decoration: none;
 }
 
 a:active {
-  color:green;
+  color:rgb(53, 53, 53);
 }
 
 #table tr {
-  background-color: darkgray;
+  background-color: rgb(124, 121, 121);
+}
+
+#message, #send {
+  border-radius: 15px;
+}
+
+.header {
+  background-color: rgb(78, 78, 78);
+  padding-bottom: 10px;
+}
+
+h1 {
+  color: #4CAF50;
 }
