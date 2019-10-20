@@ -162,9 +162,10 @@ a:active {
 
 .header {
   background-color: rgb(78, 78, 78);
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 h1 {
   color: #4CAF50;
+  font-family: "Proxima Nova", sans-serif;
 }
