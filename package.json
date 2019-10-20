@@ -1,0 +1,41 @@
+{
+  "name": "spotifind",
+  "version": "1.0.0",
+  "description": "Spotifind",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "nodemon resources/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidNguyen02/Spotifind.git"
+  },
+  "author": "David",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidNguyen02/Spotifind/issues"
+  },
+  "homepage": "https://github.com/DavidNguyen02/Spotifind#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "cookie": "^0.4.0",
+    "cookie-parser": "^1.4.4",
+    "electron": "^6.0.12",
+    "electron-prebuilt": "^1.4.13",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "http": "0.0.0",
+    "jquery": "^3.4.1",
+    "mongoose": "^5.7.5",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.0",
+    "socket.io": "^2.3.0",
+    "uuid": "^3.3.3"
+  }
+}

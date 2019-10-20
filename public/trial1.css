@@ -1,0 +1,195 @@
+body {
+  background-color: rgb(141, 135, 135);
+}
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  background-color: rgb(141, 135, 135);
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  height: 60px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #f1f1f1;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Split screen in two parts */
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+.left {
+  left: 0;
+  width: 20%;
+  background-color:rgb(58, 58, 58);
+}
+.right {
+  right: 0;
+  width: 80%;
+}
+.center {
+  display: inline-block;
+}
+
+.mine {
+  background-color: #4CAF50;
+}
+
+#table {
+  padding: 10px;
+  width: 100%;
+  table-layout: fixed;
+  empty-cells: hide;
+  border-collapse: separate;
+}
+
+.txt {
+  display: inline-block;
+  float: left;
+  width: 92%;
+
+}
+
+.but {
+  display: inline-block;
+  float: left;
+  width: 8%;
+}
+
+.btn {
+  height: 60px;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+}
+
+#rooms {
+  background-color:rgb(58, 58, 58);
+  color: white;
+}
+#table td {
+  border-radius: 10px;
+}
+
+#rooms tr td:hover{
+  background-color: #4CAF50;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color:rgb(255, 255, 255);
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color:rgb(53, 53, 53);
+}
+
+#table tr {
+  background-color: rgb(124, 121, 121);
+}
+
+#message, #send {
+  border-radius: 15px;
+}
+
+.header {
+  background-color: rgb(78, 78, 78);
+  padding-bottom: 5px;
+}
+
+h1 {
+  color: #4CAF50;
+<<<<<<< HEAD
+  font-family: "Proxima Nova", sans-serif;
+=======
+}
+
+
+
+
+/*edit the scroll on the page
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 15px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgb(100,100,100) ;
+  border-radius: 10px;
+>>>>>>> 1b9cc24d8879cd6080cfeb47e1d49cbabbed1ba3
+}

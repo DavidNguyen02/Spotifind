@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>		
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="trial1.js"></script>
+
+		<title>Message</title>
+		<link rel="stylesheet" type="text/css" href="trial1.css">
+	</head>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+		$(function () {
+			var socket = io();
+			$('form').submit(function(e) {
+				console.log('submitting...')
+				e.preventDefault(); // prevents page reloading
+				socket.emit('chat-message', $('#message').val());
+				$('#message').val('');
+				return false;
+			});
+			socket.on('chat-message', function(msg) {
+				$("#table").find('tbody').append($('<tr>')).append($('<td>').text(msg));
+			});
+			socket.on('disconnect-msg', function(msg){
+				$("#table").find('tbody').append($('<tr>')).append($('<td>').text(msg));
+			});
+		});
+	</script>
+
+	<body>
+		<div class="txt">
+			<div class="split left">
+				<div class="center">
+					<table style="height:100%">
+					<table id="rooms" border="1">
+						<tr>
+							<th>CHATROOMS</th>
+						</tr>
+
+						<tr>
+							<td height="100">
+								<a href="https://bing.com">
+									<div style="height:100;width:100">
+										People who listen to Rihanna
+									</div>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td height="100">
+								<a href="https://bing.com">
+									<div style="height:100;width:100">
+										People who listen to Drake
+									</div>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td height="100">
+								<a href="https://bing.com">
+									<div style="height:100;width:100">
+										People who listen to Ariana Grande
+									</div>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td height="100">
+								<a href="https://bing.com">
+									<div style="height:100;width:100">
+										People who listen to Gorillaz
+									</div>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td height="100">
+								<a href="https://bing.com">
+									<div style="height:100;width:100">
+										People who listen to Green Day
+									</div>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td height="100">
+								<a href="https://bing.com">
+									<div style="height:100;width:100">
+										People who listen to Watsky
+									</div>
+								</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td height="100">
+								<a href="https://bing.com">
+									<div style="height:100;width:100">
+										People who listen to Jessie Reyez
+									</div>
+								</a>
+							</td>
+						</tr>
+
+						</table>
+				</div>
+			</div>
+			<div class="split right">
+				<div class="center">
+					<div class="chat-popup" id="myForm">
+						<form action="/action_page.php" class="form-container">
+							<div class="header">
+								<h1><strong>Spotifind</strong></h1>
+							</div>
+							<table id="table">
+								<tr>
+									<td><p>Say hi!</p></td>
+									<td></td>
+								</tr>
+							</table>
+							<div class="container">
+								<form action=''>
+									<div class="txt">
+										<textarea placeholder="Type message.." name="msg" id="message" required></textarea>
+									</div>
+									<div class="but">
+										<input type="submit" class="btn" id="send"></input>
+									</div>
+								</form>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
