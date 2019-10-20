@@ -80,23 +80,26 @@
 .left {
   left: 0;
   width: 20%;
-  background-color: gray;
+  background-color: rgb(57, 139, 98);
 }
 .right {
   right: 0;
   width: 80%;
+  background-color: rgb(145, 145, 145)
 }
 .center {
   display: inline-block;
 }
 
 .mine {
-  background-color: cadetblue;
+  background-color: rgb(57, 139, 98);
 }
 
 #table {
   width: 100%;
   table-layout: fixed;
+  empty-cells: hide;
+  border-collapse: separate;
 }
 
 .txt {
@@ -122,4 +125,21 @@
 
 td {
   border-radius: 10px;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color:green;
+}
+
+#table tr {
+  background-color: darkgray;
 }
